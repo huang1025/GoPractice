@@ -3,5 +3,5 @@ package main
 import "practice"
 
 func main()  {
-	practice.ShowTwo()
+	practice.RunPersonThree()
 }
