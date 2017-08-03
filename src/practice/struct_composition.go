@@ -58,3 +58,19 @@ func RunPersonThree() {
 	p.Integer.add(12)
 	fmt.Println(p) //{12 0}
 }
+
+//=================================================================
+
+type personFour struct {
+	Double
+}
+
+//如果匿名成员和该类型都拥有同一个方法，那么直接调用的将是该类型的方法；
+func (four personFour) add(num Integer) {
+	fmt.Println("personFour type is invoking add method...")
+}
+
+func RunPersonFour() {
+	four := personFour{}
+	four.add(12)
+}
