@@ -55,3 +55,12 @@ func RunIntegerOne() {
 	i2Renfence.add()
 	fmt.Println(*i2Renfence) //14
 }
+
+//=================================================================
+
+type IntegerThree int
+
+func (i IntegerThree) add() {}
+
+// method redeclared: IntegerThree.add
+//func (i *IntegerThree)add(){}
